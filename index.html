@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "startscreen" id = "startscreen">
+        <div class = "explaintext">Nekeresdországban Nevenincs királynak egyik szeme sír, a másik nevet. Nevet, mert végre elkészült a hatalmas kacsalábon forgó palotája, sok-sok tágas szobával és folyosóval. Ugyanakkor sír is, mert ezeket a helyiségeket be kell világítani és melegen kell tartani, azonban az aktuális rezsiemelkedés őt is érinti. Itt az ideje tehát elgondolkodni, hogy pontosan hová is helyezzünk el villanykörtéket, hogy minden megfelelően be legyen világítva; ugyanakkor csak oda helyezzünk el izzót, ahol ténylegesen szükség is van rá.</div>
+        <div class = "gamerules"><h1>A játék leírása</h1>
+            <ul><li>A királynak négyzet alapú szobái vannak, amelyek fekete és fehér cellákból állnak.</li>
+            <li>A fehér cellákba villanykörtéket lehet elhelyezni.</li>
+            <li>A villanykörtékből a fény átlósan nem terjed, csak az adott sor és oszlop mentén.</li>
+            <li>A fekete cellákon valamilyen tereptárgy van, ami akadályozza a fény terjedését.</li>
+            <li>A fekete cellák opcionálisan egy egész számot is tartalmazhatnak 0-tól 4-ig. Ez azt jelzi, hogy hány szomszédos (alul, felül, jobbra, balra) cella tartalmaz villanykörtét. Ha van ilyen szám, akkor be kell tartani!</li>
+            <li>Két villanykörte soha nem világíthatja meg egymást!</li>
+            <li>A játék célja a villanykörtéket úgy elhelyezni, hogy minden fehér cellát megvilágítsanak.</li>
+            </ul></div>
+        <p> Username: <input type="text" id="name"> </p>
+        <button data-mode="Easy">Könnyű</button>
+        <button data-mode="Hard">Nehéz</button>
+        <button data-mode="Extreme">Extrém</button>
+        <button id = "editorbutton">Szerkesztő</button>
+        <div id="customsdiv"></div>
+        <div id = "loaddiv">
+        </div>
+    </div>
+    <div id="highscores">
+        <button value="show">Eredmények Mutatása</button>
+        <button value ="clear">Eredmények Törlése</button>
+        <div id="highlistdiv" hidden>
+            <table id="scoreslist"><tr><th>Név</th><th>Pálya</th><th>Idő</th></tr></table>
+        </div>
+    </div>
+    <div class="gamediv" id="gamediv" hidden>
+        <p id="timer"></p>
+        <p id="namep"></p>
+        <button>Mentés</button>
+        <table class="gametable" id="gameboard">
+        </table>
+    </div>
+    <div class="enddiv" id="enddiv" hidden>
+        <p>GAME OVER</p>
+        <button id="reset">Kilépés</button>
+    </div>
+    <div id="editor" hidden>
+        Méret: <input type="number" id="sizeinput">
+        <button id = "genbutton">Generate</button>
+        <div id="editboarddiv" hidden>
+            <table id ="editortable" class="gametable"></table>
+        </div>
+        <div id="editoptions" hidden>
+            Szám: <input type="number" id="blacknums">
+            <button value="Num">Szám</button>
+            <button value="Black">Fekete</button>
+            Név: <input type="text" id="editname">
+            <button value="Save">Pálya Mentése</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

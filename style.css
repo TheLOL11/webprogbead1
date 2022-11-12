@@ -1,0 +1,95 @@
+.startscreen{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.explaintext{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    border-color: teal;
+    font-size: 2.5vw;
+    border: 10px solid;
+    padding: 0.5vh;
+    margin-bottom: 1vh;
+}
+.gamerules{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    border-color: teal;
+    border: 10px solid;
+    padding-left:1%;
+    padding-right: 2%;
+    margin-bottom: 1vh;
+}
+h1{
+    text-align:center;
+}
+
+.gametable{
+    margin:auto;
+    width:100%;
+    border-spacing: 0px;
+    display:inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+}
+
+.gamecell0{
+    border: 0.5px solid;
+    border-color: gray;
+    background-color: white;
+    text-align:center;
+    width: 5vh;
+    height: 5vh;
+}
+
+.gamecell1{
+    border: 1px solid;
+    border-color: gray;
+    background-color: black;
+    text-align:center;
+    color:white;
+    width: 5vh;
+    height: 5vh;
+}
+.gamecell1good{
+    border: 1px solid;
+    border-color: gray;
+    background-color: black;
+    text-align:center;
+    color:green;
+    width: 5vh;
+    height: 5vh;
+}
+
+.gamecell2{
+    border: 1px solid;
+    border-color: gray;
+    background-color: khaki;
+    text-align:center;
+    color:white;
+    width: 5vh;
+    height: 5vh;
+}
+.gamecell2bad{
+    border: 1px solid;
+    border-color: gray;
+    background-color: darkred;
+    text-align:center;
+    color:white;
+    width: 5vh;
+    height: 5vh;
+}
+
+.mapbutton{
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: gray;
+}
+
+.gamediv{
+    margin: auto;
+    width: 50%;
+}
